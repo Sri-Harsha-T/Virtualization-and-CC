@@ -1,0 +1,1731 @@
+Thread Pool 100
+Command :  ab -n 100000 -c 10 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      10
+Time taken for tests:   3.722 seconds
+Complete requests:      100000
+Failed requests:        118
+   (Connect: 0, Receive: 0, Length: 118, Exceptions: 0)
+Total transferred:      7500118 bytes
+HTML transferred:       3100118 bytes
+Requests per second:    26869.08 [#/sec] (mean)
+Time per request:       0.372 [ms] (mean)
+Time per request:       0.037 [ms] (mean, across all concurrent requests)
+Transfer rate:          1967.98 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       2
+Processing:     0    0   0.1      0       3
+Waiting:        0    0   0.1      0       3
+Total:          0    0   0.1      0       3
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%      0
+  95%      0
+  98%      0
+  99%      1
+ 100%      3 (longest request)
+---------------------------------------------------------------
+
+ab -n 100000 -c 20 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      20
+Time taken for tests:   3.598 seconds
+Complete requests:      100000
+Failed requests:        273
+   (Connect: 0, Receive: 0, Length: 273, Exceptions: 0)
+Total transferred:      7500273 bytes
+HTML transferred:       3100273 bytes
+Requests per second:    27794.97 [#/sec] (mean)
+Time per request:       0.720 [ms] (mean)
+Time per request:       0.036 [ms] (mean, across all concurrent requests)
+Transfer rate:          2035.84 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       2
+Processing:     0    0   0.1      0       2
+Waiting:        0    0   0.1      0       2
+Total:          0    1   0.1      1       2
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      1
+  90%      1
+  95%      1
+  98%      1
+  99%      1
+ 100%      2 (longest request)
+--------------------------------------------------
+
+ab -n 100000 -c 30 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      30
+Time taken for tests:   3.802 seconds
+Complete requests:      100000
+Failed requests:        271
+   (Connect: 0, Receive: 0, Length: 271, Exceptions: 0)
+Total transferred:      7500271 bytes
+HTML transferred:       3100271 bytes
+Requests per second:    26303.57 [#/sec] (mean)
+Time per request:       1.141 [ms] (mean)
+Time per request:       0.038 [ms] (mean, across all concurrent requests)
+Transfer rate:          1926.60 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.2      1       3
+Processing:     0    1   0.2      1       3
+Waiting:        0    0   0.2      0       2
+Total:          0    1   0.1      1       3
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      1
+  90%      1
+  95%      1
+  98%      1
+  99%      1
+ 100%      3 (longest request)
+-------------------------------------------------
+
+ab -n 100000 -c 40 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      40
+Time taken for tests:   3.852 seconds
+Complete requests:      100000
+Failed requests:        301
+   (Connect: 0, Receive: 0, Length: 301, Exceptions: 0)
+Total transferred:      7500301 bytes
+HTML transferred:       3100301 bytes
+Requests per second:    25961.76 [#/sec] (mean)
+Time per request:       1.541 [ms] (mean)
+Time per request:       0.039 [ms] (mean, across all concurrent requests)
+Transfer rate:          1901.57 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.3      1       3
+Processing:     0    1   0.3      1       3
+Waiting:        0    0   0.2      0       3
+Total:          1    2   0.1      2       3
+
+Percentage of the requests served within a certain time (ms)
+  50%      2
+  66%      2
+  75%      2
+  80%      2
+  90%      2
+  95%      2
+  98%      2
+  99%      2
+ 100%      3 (longest request)
+------------------------------------------------------
+
+ab -n 100000 -c 50 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      50
+Time taken for tests:   3.836 seconds
+Complete requests:      100000
+Failed requests:        285
+   (Connect: 0, Receive: 0, Length: 285, Exceptions: 0)
+Total transferred:      7500285 bytes
+HTML transferred:       3100285 bytes
+Requests per second:    26069.26 [#/sec] (mean)
+Time per request:       1.918 [ms] (mean)
+Time per request:       0.038 [ms] (mean, across all concurrent requests)
+Transfer rate:          1909.44 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.3      1       3
+Processing:     0    1   0.3      1       4
+Waiting:        0    1   0.3      0       3
+Total:          2    2   0.1      2       5
+ERROR: The median and mean for the waiting time are more than twice the standard
+       deviation apart. These results are NOT reliable.
+
+Percentage of the requests served within a certain time (ms)
+  50%      2
+  66%      2
+  75%      2
+  80%      2
+  90%      2
+  95%      2
+  98%      2
+  99%      2
+ 100%      5 (longest request)
+---------------------------------------------------------
+
+ab -n 100000 -c 60 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      60
+Time taken for tests:   3.765 seconds
+Complete requests:      100000
+Failed requests:        280
+   (Connect: 0, Receive: 0, Length: 280, Exceptions: 0)
+Total transferred:      7500280 bytes
+HTML transferred:       3100280 bytes
+Requests per second:    26562.13 [#/sec] (mean)
+Time per request:       2.259 [ms] (mean)
+Time per request:       0.038 [ms] (mean, across all concurrent requests)
+Transfer rate:          1945.54 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.4      1       3
+Processing:     0    1   0.4      1       3
+Waiting:        0    1   0.4      0       2
+Total:          1    2   0.1      2       4
+ERROR: The median and mean for the waiting time are more than twice the standard
+       deviation apart. These results are NOT reliable.
+
+Percentage of the requests served within a certain time (ms)
+  50%      2
+  66%      2
+  75%      2
+  80%      2
+  90%      2
+  95%      2
+  98%      3
+  99%      3
+ 100%      4 (longest request)
+------------------------------------------------
+
+ab -n 100000 -c 70 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      70
+Time taken for tests:   3.858 seconds
+Complete requests:      100000
+Failed requests:        292
+   (Connect: 0, Receive: 0, Length: 292, Exceptions: 0)
+Total transferred:      7500292 bytes
+HTML transferred:       3100292 bytes
+Requests per second:    25918.39 [#/sec] (mean)
+Time per request:       2.701 [ms] (mean)
+Time per request:       0.039 [ms] (mean, across all concurrent requests)
+Transfer rate:          1898.39 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.5      1       4
+Processing:     0    1   0.5      1       4
+Waiting:        0    1   0.4      0       3
+Total:          2    3   0.2      3       5
+ERROR: The median and mean for the waiting time are more than twice the standard
+       deviation apart. These results are NOT reliable.
+
+Percentage of the requests served within a certain time (ms)
+  50%      3
+  66%      3
+  75%      3
+  80%      3
+  90%      3
+  95%      3
+  98%      3
+  99%      4
+ 100%      5 (longest request)
+------------------------------------
+
+ab -n 100000 -c 80 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      80
+Time taken for tests:   3.752 seconds
+Complete requests:      100000
+Failed requests:        321
+   (Connect: 0, Receive: 0, Length: 321, Exceptions: 0)
+Total transferred:      7500321 bytes
+HTML transferred:       3100321 bytes
+Requests per second:    26649.18 [#/sec] (mean)
+Time per request:       3.002 [ms] (mean)
+Time per request:       0.038 [ms] (mean, across all concurrent requests)
+Transfer rate:          1951.93 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.5      1       4
+Processing:     1    2   0.5      2       4
+Waiting:        0    1   0.5      1       3
+Total:          2    3   0.2      3       5
+
+Percentage of the requests served within a certain time (ms)
+  50%      3
+  66%      3
+  75%      3
+  80%      3
+  90%      3
+  95%      3
+  98%      3
+  99%      4
+ 100%      5 (longest request)
+-------------------------------------------------
+
+ab -n 100000 -c 90 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      90
+Time taken for tests:   3.857 seconds
+Complete requests:      100000
+Failed requests:        252
+   (Connect: 0, Receive: 0, Length: 252, Exceptions: 0)
+Total transferred:      7500252 bytes
+HTML transferred:       3100252 bytes
+Requests per second:    25925.35 [#/sec] (mean)
+Time per request:       3.472 [ms] (mean)
+Time per request:       0.039 [ms] (mean, across all concurrent requests)
+Transfer rate:          1898.89 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   0.6      2       5
+Processing:     0    2   0.6      2       5
+Waiting:        0    1   0.5      1       4
+Total:          3    3   0.2      3       5
+
+Percentage of the requests served within a certain time (ms)
+  50%      3
+  66%      3
+  75%      3
+  80%      4
+  90%      4
+  95%      4
+  98%      4
+  99%      4
+ 100%      5 (longest request)
+-----------------------------------------------
+
+ab -n 100000 -c 100 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      100
+Time taken for tests:   3.924 seconds
+Complete requests:      100000
+Failed requests:        271
+   (Connect: 0, Receive: 0, Length: 271, Exceptions: 0)
+Total transferred:      7500271 bytes
+HTML transferred:       3100271 bytes
+Requests per second:    25483.36 [#/sec] (mean)
+Time per request:       3.924 [ms] (mean)
+Time per request:       0.039 [ms] (mean, across all concurrent requests)
+Transfer rate:          1866.52 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2   0.7      2       4
+Processing:     1    2   0.7      2       4
+Waiting:        0    1   0.6      1       4
+Total:          2    4   0.2      4       6
+
+Percentage of the requests served within a certain time (ms)
+  50%      4
+  66%      4
+  75%      4
+  80%      4
+  90%      4
+  95%      4
+  98%      5
+  99%      5
+ 100%      6 (longest request)
+-------------------------------------------
+
+Threadpool 150
+
+ab -n 100000 -c 10 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      10
+Time taken for tests:   3.202 seconds
+Complete requests:      100000
+Failed requests:        145
+   (Connect: 0, Receive: 0, Length: 145, Exceptions: 0)
+Total transferred:      7500145 bytes
+HTML transferred:       3100145 bytes
+Requests per second:    31231.27 [#/sec] (mean)
+Time per request:       0.320 [ms] (mean)
+Time per request:       0.032 [ms] (mean, across all concurrent requests)
+Transfer rate:          2287.49 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       2
+Processing:     0    0   0.1      0       2
+Waiting:        0    0   0.1      0       2
+Total:          0    0   0.1      0       2
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%      0
+  95%      0
+  98%      1
+  99%      1
+ 100%      2 (longest request)
+----------------------------------
+
+ab -n 100000 -c 20 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      20
+Time taken for tests:   3.085 seconds
+Complete requests:      100000
+Failed requests:        264
+   (Connect: 0, Receive: 0, Length: 264, Exceptions: 0)
+Total transferred:      7500264 bytes
+HTML transferred:       3100264 bytes
+Requests per second:    32410.77 [#/sec] (mean)
+Time per request:       0.617 [ms] (mean)
+Time per request:       0.031 [ms] (mean, across all concurrent requests)
+Transfer rate:          2373.92 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       1
+Processing:     0    0   0.1      0       1
+Waiting:        0    0   0.1      0       1
+Total:          0    1   0.1      1       2
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      1
+  90%      1
+  95%      1
+  98%      1
+  99%      1
+ 100%      2 (longest request)
+-------------------------------------
+
+ab -n 100000 -c 30 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      30
+Time taken for tests:   3.081 seconds
+Complete requests:      100000
+Failed requests:        320
+   (Connect: 0, Receive: 0, Length: 320, Exceptions: 0)
+Total transferred:      7500320 bytes
+HTML transferred:       3100320 bytes
+Requests per second:    32453.93 [#/sec] (mean)
+Time per request:       0.924 [ms] (mean)
+Time per request:       0.031 [ms] (mean, across all concurrent requests)
+Transfer rate:          2377.10 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.2      0       1
+Processing:     0    0   0.2      0       2
+Waiting:        0    0   0.2      0       1
+Total:          0    1   0.1      1       2
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      1
+  90%      1
+  95%      1
+  98%      1
+  99%      1
+ 100%      2 (longest request)
+--------------------------------------------
+
+ab -n 100000 -c 40 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      40
+Time taken for tests:   3.037 seconds
+Complete requests:      100000
+Failed requests:        283
+   (Connect: 0, Receive: 0, Length: 283, Exceptions: 0)
+Total transferred:      7500283 bytes
+HTML transferred:       3100283 bytes
+Requests per second:    32923.32 [#/sec] (mean)
+Time per request:       1.215 [ms] (mean)
+Time per request:       0.030 [ms] (mean, across all concurrent requests)
+Transfer rate:          2411.47 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.2      1       2
+Processing:     0    1   0.2      1       2
+Waiting:        0    0   0.2      0       1
+Total:          1    1   0.1      1       2
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      1
+  90%      1
+  95%      1
+  98%      1
+  99%      2
+ 100%      2 (longest request)
+-----------------------------------------
+
+ab -n 100000 -c 50 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      50
+Time taken for tests:   3.041 seconds
+Complete requests:      100000
+Failed requests:        322
+   (Connect: 0, Receive: 0, Length: 322, Exceptions: 0)
+Total transferred:      7500322 bytes
+HTML transferred:       3100322 bytes
+Requests per second:    32885.79 [#/sec] (mean)
+Time per request:       1.520 [ms] (mean)
+Time per request:       0.030 [ms] (mean, across all concurrent requests)
+Transfer rate:          2408.73 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.3      1       3
+Processing:     0    1   0.3      1       3
+Waiting:        0    0   0.2      0       2
+Total:          1    2   0.1      1       3
+ERROR: The median and mean for the total time are more than twice the standard
+       deviation apart. These results are NOT reliable.
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      2
+  80%      2
+  90%      2
+  95%      2
+  98%      2
+  99%      2
+ 100%      3 (longest request)
+-------------------------------------
+
+ab -n 100000 -c 60 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      60
+Time taken for tests:   3.080 seconds
+Complete requests:      100000
+Failed requests:        312
+   (Connect: 0, Receive: 0, Length: 312, Exceptions: 0)
+Total transferred:      7500312 bytes
+HTML transferred:       3100312 bytes
+Requests per second:    32463.88 [#/sec] (mean)
+Time per request:       1.848 [ms] (mean)
+Time per request:       0.031 [ms] (mean, across all concurrent requests)
+Transfer rate:          2377.82 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.3      1       3
+Processing:     0    1   0.3      1       3
+Waiting:        0    0   0.3      0       3
+Total:          1    2   0.2      2       4
+
+Percentage of the requests served within a certain time (ms)
+  50%      2
+  66%      2
+  75%      2
+  80%      2
+  90%      2
+  95%      2
+  98%      2
+  99%      3
+ 100%      4 (longest request)
+-------------------------------
+
+ab -n 100000 -c 70 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      70
+Time taken for tests:   3.125 seconds
+Complete requests:      100000
+Failed requests:        302
+   (Connect: 0, Receive: 0, Length: 302, Exceptions: 0)
+Total transferred:      7500302 bytes
+HTML transferred:       3100302 bytes
+Requests per second:    32002.06 [#/sec] (mean)
+Time per request:       2.187 [ms] (mean)
+Time per request:       0.031 [ms] (mean, across all concurrent requests)
+Transfer rate:          2344.00 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.4      1       4
+Processing:     0    1   0.4      1       4
+Waiting:        0    1   0.4      0       3
+Total:          1    2   0.2      2       5
+ERROR: The median and mean for the waiting time are more than twice the standard
+       deviation apart. These results are NOT reliable.
+
+Percentage of the requests served within a certain time (ms)
+  50%      2
+  66%      2
+  75%      2
+  80%      2
+  90%      2
+  95%      3
+  98%      3
+  99%      3
+ 100%      5 (longest request)
+----------------------------------------
+
+ab -n 100000 -c 80 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      80
+Time taken for tests:   3.074 seconds
+Complete requests:      100000
+Failed requests:        294
+   (Connect: 0, Receive: 0, Length: 294, Exceptions: 0)
+Total transferred:      7500294 bytes
+HTML transferred:       3100294 bytes
+Requests per second:    32530.75 [#/sec] (mean)
+Time per request:       2.459 [ms] (mean)
+Time per request:       0.031 [ms] (mean, across all concurrent requests)
+Transfer rate:          2382.72 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.4      1       4
+Processing:     0    1   0.4      1       4
+Waiting:        0    1   0.4      0       3
+Total:          2    2   0.2      2       5
+ERROR: The median and mean for the waiting time are more than twice the standard
+       deviation apart. These results are NOT reliable.
+
+Percentage of the requests served within a certain time (ms)
+  50%      2
+  66%      2
+  75%      2
+  80%      2
+  90%      3
+  95%      3
+  98%      3
+  99%      3
+ 100%      5 (longest request)
+-----------------------------------
+
+ab -n 100000 -c 90 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      90
+Time taken for tests:   3.086 seconds
+Complete requests:      100000
+Failed requests:        297
+   (Connect: 0, Receive: 0, Length: 297, Exceptions: 0)
+Total transferred:      7500297 bytes
+HTML transferred:       3100297 bytes
+Requests per second:    32401.96 [#/sec] (mean)
+Time per request:       2.778 [ms] (mean)
+Time per request:       0.031 [ms] (mean, across all concurrent requests)
+Transfer rate:          2373.28 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.5      1       3
+Processing:     0    1   0.5      1       3
+Waiting:        0    1   0.4      1       3
+Total:          2    3   0.1      3       5
+
+Percentage of the requests served within a certain time (ms)
+  50%      3
+  66%      3
+  75%      3
+  80%      3
+  90%      3
+  95%      3
+  98%      3
+  99%      3
+ 100%      5 (longest request)
+-----------------------------------
+
+ab -n 100000 -c 100 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      100
+Time taken for tests:   3.015 seconds
+Complete requests:      100000
+Failed requests:        345
+   (Connect: 0, Receive: 0, Length: 345, Exceptions: 0)
+Total transferred:      7500345 bytes
+HTML transferred:       3100345 bytes
+Requests per second:    33168.85 [#/sec] (mean)
+Time per request:       3.015 [ms] (mean)
+Time per request:       0.030 [ms] (mean, across all concurrent requests)
+Transfer rate:          2429.47 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.5      1       4
+Processing:     1    2   0.5      2       6
+Waiting:        0    1   0.5      1       6
+Total:          2    3   0.2      3       7
+
+Percentage of the requests served within a certain time (ms)
+  50%      3
+  66%      3
+  75%      3
+  80%      3
+  90%      3
+  95%      3
+  98%      4
+  99%      4
+ 100%      7 (longest request)
+-------------------------------------
+
+Threadpool 200
+
+ab -n 100000 -c 10 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      10
+Time taken for tests:   3.231 seconds
+Complete requests:      100000
+Failed requests:        128
+   (Connect: 0, Receive: 0, Length: 128, Exceptions: 0)
+Total transferred:      7500128 bytes
+HTML transferred:       3100128 bytes
+Requests per second:    30945.71 [#/sec] (mean)
+Time per request:       0.323 [ms] (mean)
+Time per request:       0.032 [ms] (mean, across all concurrent requests)
+Transfer rate:          2266.57 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       2
+Processing:     0    0   0.0      0       2
+Waiting:        0    0   0.0      0       2
+Total:          0    0   0.1      0       2
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%      0
+  95%      0
+  98%      0
+  99%      0
+ 100%      2 (longest request)
+----------------------------------------
+
+ab -n 100000 -c 20 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      20
+Time taken for tests:   3.132 seconds
+Complete requests:      100000
+Failed requests:        214
+   (Connect: 0, Receive: 0, Length: 214, Exceptions: 0)
+Total transferred:      7500214 bytes
+HTML transferred:       3100214 bytes
+Requests per second:    31932.16 [#/sec] (mean)
+Time per request:       0.626 [ms] (mean)
+Time per request:       0.031 [ms] (mean, across all concurrent requests)
+Transfer rate:          2338.85 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       2
+Processing:     0    0   0.1      0       3
+Waiting:        0    0   0.1      0       2
+Total:          0    1   0.1      1       3
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      1
+  90%      1
+  95%      1
+  98%      1
+  99%      1
+ 100%      3 (longest request)
+---------------------------------------
+
+ab -n 100000 -c 30 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      30
+Time taken for tests:   3.034 seconds
+Complete requests:      100000
+Failed requests:        269
+   (Connect: 0, Receive: 0, Length: 269, Exceptions: 0)
+Total transferred:      7500269 bytes
+HTML transferred:       3100269 bytes
+Requests per second:    32957.89 [#/sec] (mean)
+Time per request:       0.910 [ms] (mean)
+Time per request:       0.030 [ms] (mean, across all concurrent requests)
+Transfer rate:          2413.99 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.2      0       3
+Processing:     0    0   0.2      0       3
+Waiting:        0    0   0.1      0       3
+Total:          0    1   0.1      1       3
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      1
+  90%      1
+  95%      1
+  98%      1
+  99%      1
+ 100%      3 (longest request)
+------------------------------------
+
+ab -n 100000 -c 40 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      40
+Time taken for tests:   3.110 seconds
+Complete requests:      100000
+Failed requests:        279
+   (Connect: 0, Receive: 0, Length: 279, Exceptions: 0)
+Total transferred:      7500279 bytes
+HTML transferred:       3100279 bytes
+Requests per second:    32158.50 [#/sec] (mean)
+Time per request:       1.244 [ms] (mean)
+Time per request:       0.031 [ms] (mean, across all concurrent requests)
+Transfer rate:          2355.45 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.2      1       3
+Processing:     0    1   0.2      1       3
+Waiting:        0    0   0.2      0       3
+Total:          1    1   0.1      1       3
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      1
+  90%      1
+  95%      1
+  98%      2
+  99%      2
+ 100%      3 (longest request)
+-----------------------------------------
+
+ab -n 100000 -c 50 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      50
+Time taken for tests:   3.078 seconds
+Complete requests:      100000
+Failed requests:        290
+   (Connect: 0, Receive: 0, Length: 290, Exceptions: 0)
+Total transferred:      7500290 bytes
+HTML transferred:       3100290 bytes
+Requests per second:    32487.06 [#/sec] (mean)
+Time per request:       1.539 [ms] (mean)
+Time per request:       0.031 [ms] (mean, across all concurrent requests)
+Transfer rate:          2379.52 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.3      1       3
+Processing:     0    1   0.3      1       3
+Waiting:        0    0   0.2      0       2
+Total:          1    2   0.1      2       3
+
+Percentage of the requests served within a certain time (ms)
+  50%      2
+  66%      2
+  75%      2
+  80%      2
+  90%      2
+  95%      2
+  98%      2
+  99%      2
+ 100%      3 (longest request)
+---------------------------------
+
+ab -n 100000 -c 60 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      60
+Time taken for tests:   3.193 seconds
+Complete requests:      100000
+Failed requests:        259
+   (Connect: 0, Receive: 0, Length: 259, Exceptions: 0)
+Total transferred:      7500259 bytes
+HTML transferred:       3100259 bytes
+Requests per second:    31322.86 [#/sec] (mean)
+Time per request:       1.916 [ms] (mean)
+Time per request:       0.032 [ms] (mean, across all concurrent requests)
+Transfer rate:          2294.23 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.4      1       7
+Processing:     0    1   0.3      1       7
+Waiting:        0    0   0.3      0       4
+Total:          1    2   0.2      2       9
+
+Percentage of the requests served within a certain time (ms)
+  50%      2
+  66%      2
+  75%      2
+  80%      2
+  90%      2
+  95%      2
+  98%      2
+  99%      2
+ 100%      9 (longest request)
+--------------------------------
+
+ab -n 100000 -c 70 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      70
+Time taken for tests:   3.062 seconds
+Complete requests:      100000
+Failed requests:        260
+   (Connect: 0, Receive: 0, Length: 260, Exceptions: 0)
+Total transferred:      7500260 bytes
+HTML transferred:       3100260 bytes
+Requests per second:    32662.27 [#/sec] (mean)
+Time per request:       2.143 [ms] (mean)
+Time per request:       0.031 [ms] (mean, across all concurrent requests)
+Transfer rate:          2392.34 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.4      1       3
+Processing:     0    1   0.4      1       3
+Waiting:        0    1   0.3      0       3
+Total:          1    2   0.2      2       4
+ERROR: The median and mean for the waiting time are more than twice the standard
+       deviation apart. These results are NOT reliable.
+
+Percentage of the requests served within a certain time (ms)
+  50%      2
+  66%      2
+  75%      2
+  80%      2
+  90%      2
+  95%      2
+  98%      3
+  99%      3
+ 100%      4 (longest request)
+-------------------------------------
+
+ab -n 100000 -c 80 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      80
+Time taken for tests:   3.137 seconds
+Complete requests:      100000
+Failed requests:        250
+   (Connect: 0, Receive: 0, Length: 250, Exceptions: 0)
+Total transferred:      7500250 bytes
+HTML transferred:       3100250 bytes
+Requests per second:    31873.51 [#/sec] (mean)
+Time per request:       2.510 [ms] (mean)
+Time per request:       0.031 [ms] (mean, across all concurrent requests)
+Transfer rate:          2334.56 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.4      1       4
+Processing:     0    1   0.4      1       4
+Waiting:        0    1   0.4      0       3
+Total:          2    2   0.2      2       5
+ERROR: The median and mean for the waiting time are more than twice the standard
+       deviation apart. These results are NOT reliable.
+
+Percentage of the requests served within a certain time (ms)
+  50%      2
+  66%      2
+  75%      2
+  80%      3
+  90%      3
+  95%      3
+  98%      3
+  99%      3
+ 100%      5 (longest request)
+------------------------------
+
+ab -n 100000 -c 90 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      90
+Time taken for tests:   3.076 seconds
+Complete requests:      100000
+Failed requests:        269
+   (Connect: 0, Receive: 0, Length: 269, Exceptions: 0)
+Total transferred:      7500269 bytes
+HTML transferred:       3100269 bytes
+Requests per second:    32511.49 [#/sec] (mean)
+Time per request:       2.768 [ms] (mean)
+Time per request:       0.031 [ms] (mean, across all concurrent requests)
+Transfer rate:          2381.30 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.5      1       4
+Processing:     0    1   0.5      1       4
+Waiting:        0    1   0.4      1       3
+Total:          2    3   0.2      3       5
+
+Percentage of the requests served within a certain time (ms)
+  50%      3
+  66%      3
+  75%      3
+  80%      3
+  90%      3
+  95%      3
+  98%      3
+  99%      4
+ 100%      5 (longest request)
+-----------------------------------------------
+
+ab -n 100000 -c 100 http://127.0.0.1:8080/arithmetic/prime?num=151
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /arithmetic/prime?num=151
+Document Length:        31 bytes
+
+Concurrency Level:      100
+Time taken for tests:   3.011 seconds
+Complete requests:      100000
+Failed requests:        274
+   (Connect: 0, Receive: 0, Length: 274, Exceptions: 0)
+Total transferred:      7500274 bytes
+HTML transferred:       3100274 bytes
+Requests per second:    33216.64 [#/sec] (mean)
+Time per request:       3.011 [ms] (mean)
+Time per request:       0.030 [ms] (mean, across all concurrent requests)
+Transfer rate:          2432.95 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.5      1       4
+Processing:     1    2   0.5      2       4
+Waiting:        0    1   0.5      1       3
+Total:          2    3   0.2      3       5
+
+Percentage of the requests served within a certain time (ms)
+  50%      3
+  66%      3
+  75%      3
+  80%      3
+  90%      3
+  95%      3
+  98%      4
+  99%      4
+ 100%      5 (longest request)
+--------------------------------------
+

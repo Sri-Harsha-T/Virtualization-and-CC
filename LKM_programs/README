@@ -1,0 +1,52 @@
+README File for Assignment 2 CS695, By: Sri Harsha Thota (200050138)
+
+lkm1.c : 
+
+    [   80.536502] LOADING RUNNING-RUNNABLE PROC LIST MODULE
+    [   80.536546] PID: 5709 PROCESS: update-notifier STATE: R 
+    [   80.536547] PID: 5759 PROCESS: insmod STATE: R 
+    [  107.374898] REMOVING RUNNING-RUNNABLE PROC LIST MODULE
+
+Made use of task_state_index function in linux/sched.h which if returns 0 indicates that the 
+given process is either RUNNING or RUNNABLE with same corresponding status "R"
+Verified the outputs with the output with the ps -al command
+
+lkm2.c:
+    
+    [23912.411360] LOADING DISPLAY LARGEST IN-USE HEAP MODULE
+    [23912.417127] PID: 2831 HEAP MEMORY: 254840832
+    [23926.745518] REMOVING DISPLAY LARGEST IN-USE HEAP MODULE
+
+Iterated through all vmas in the mmap corresponding to the processes which again were iterated through
+added all the memory for vmas lying between the start_brk and brk therefore calculating the heap for each process
+compared the heap for all the processes and listed the process with the highest in use heap memory
+compared and verified the results with the maps file in the /proc/[pid] directory of the processes
+
+lkm3.c:
+
+    [24068.637264] LOADING KERNEL STACK POINTER (PID=1) MODULE
+    [24068.637273] PID: 1 KERNEL STACK POINTER: 0xFFFFAD9D40073C48
+    [24089.932532] REMOVING KERNEL STACK POINTER (PID=1) MODULE
+
+After finding the task struct of the process with the pid 1, found the Kernel stack pointer of the process
+as the sp member of task->thread thread_struct (task->thread.sp)
+
+lkm4.c:
+
+    [24337.263387] LOADING VIRTUAL PHYSICAL ADDRESS MAP MODULE
+    [24337.263398] PID: 1 VIRTUAL ADDRESS: 0xFFFFAD9D40073C48 PHYSICAL ADDRESS: 0x80000001002CCC48
+    [24348.832321] REMOVING VIRTUAL PHYSICAL ADDRESS MAP MODULE
+
+Performed a page table walk for the virtual address to physical address map and performed necessary checks for the address map to be valid in the task->mm struct.
+The module takes inputs in the form of pid_val (PID Value) and virt_addr (VIRTUAL ADDRESS IN UNSIGNED LONG FORMAT)
+
+lkm5.c:
+
+    [24698.451482] LOADING LAZY MEMORY ALLOCATION MODULE
+    [24698.453725] PID: 3114 VIRTUAL MEMORY: 1631707761 PHYSICAL MEMORY: 1709(IN PAGES)
+    [24710.335680] REMOVING LAZY MEMORY ALLOCATION MODULE
+
+The module first finds the task_struct of the process with the input pid_val and iterates through all the vma's in the task->mm starting from task->mm->mmap
+It then iterates through the virtual addresses with the step PAGE_SIZE and calculates the total virtual memory allocation and also checks whether corresponding 
+physical memory map exists (physical allocation of corresponding virtual address exists) with the help of phy_addr function which returns physical address of corresponding virtual address if exists and 0 otherwise
+Since we observe that the Pages in virtual memory exceed that corresponding to physical memory, it indicates that demand paging/ Lazy Memory Allocation occurs

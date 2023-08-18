@@ -1,0 +1,127 @@
+Test 1 :
+20000 100000 -> cpu.max
+150 -> cpu.weight
+
+Results : 
+usage_usec 22137157
+user_usec 4670645
+system_usec 17466511
+nr_periods 1110
+nr_throttled 1106
+throttled_usec 86454965
+nr_bursts 0
+burst_usec 0
+
+Test 2 :
+20000 100000 -> cpu.max
+200 -> cpu.weight
+
+Results :
+usage_usec 20821860
+user_usec 4306896
+system_usec 16514963
+nr_periods 1045
+nr_throttled 1040
+throttled_usec 80681496
+nr_bursts 0
+burst_usec 0
+
+Test 3 :
+40000 100000 -> cpu.max
+
+Results :
+usage_usec 17353166
+user_usec 3533145
+system_usec 13820020
+nr_periods 437
+nr_throttled 433
+throttled_usec 23360905
+nr_bursts 0
+burst_usec 0
+
+Test 4 :
+60000 100000 -> cpu.max
+
+Results :
+usage_usec 16970551
+user_usec 3517067
+system_usec 13453483
+nr_periods 287
+nr_throttled 282
+throttled_usec 7790370
+nr_bursts 0
+burst_usec 0
+
+Test 5 :
+80000 100000 -> cpu.max
+
+Results :
+usage_usec 15929085
+user_usec 3663649
+system_usec 12265435
+nr_periods 208
+nr_throttled 51
+throttled_usec 50472
+nr_bursts 0
+burst_usec 0
+
+
+Test 6 :
+90000 100000 -> cpu.max
+
+Results:
+usage_usec 15755815
+user_usec 3409481
+system_usec 12346334
+nr_periods 208
+nr_throttled 0
+throttled_usec 0
+nr_bursts 0
+burst_usec 0
+
+
+Test 7 :
+100000 100000 -> cpu.max
+
+Results :
+usage_usec 15648198
+user_usec 3349193
+system_usec 12299005
+nr_periods 207
+nr_throttled 0
+throttled_usec 0
+nr_bursts 0
+burst_usec 0
+
+
+Test 8 :
+600000 1000000 -> cpu.max
+
+Results :
+usage_usec 16655238
+user_usec 3547059
+system_usec 13108178
+nr_periods 32
+nr_throttled 27
+throttled_usec 6155281
+nr_bursts 0
+burst_usec 0
+
+Analysis : 
+Here, there is only one CPU Intensive process running. I placed the process in a CGroup and changed various conigurations. From tests 1 and 2, we can 
+clearly see that, since there is only one CGroup, cpu.weight is irrelevant. I tested with two different values of cpu.weight and the results turned out 
+to be almost similar.
+
+After that, I experimented with various values for the quota and period of the CGroup. For 6 out of the 7 subsequent tests, I have taken the period to be 
+100000. As we can see from the results, when the quota is less and when we double the quota, the number of periods is approximately halved. This can be seen 
+when comparing tests 2, 3 and 4.  Also, we can see that the throttled time is very high when the quota is very less. When the quota increases, we can see
+a steady decrease in the throttled time until it becomes 0 when the quota exceeds 80%. 
+
+One observation that we can make is that when the throttle time is very less, the number of periods almost becomes constant. This becomes evident when we
+consider over 90% quota.
+
+Also, when we increase the period to 1000000 in the last test, though the time taken is very similar to case 4, during the execution, we can clearly observe
+the gaps or breaks caused due to throttling.
+
+Also, we may note that the user_usec metric values are very close in all the above test cases. This should be expected since it represents the actual time 
+utilised by the program.

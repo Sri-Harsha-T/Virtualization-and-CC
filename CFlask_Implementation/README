@@ -1,0 +1,22 @@
+README File for assignment 1, Sri Harsha Thota, 200050138
+Instructions for Running Part 5a : 
+    1) Place the assignment folder in the examples directory of libhttp
+    2) Run 'make cflask' for building the executable
+    3) Run the executable as './cflask <port> <number of threads>'
+
+Part 5b : 
+    AIM : To perform a load test of the server (local) + functions provided as per part 5a for increaing request rate 
+        and comparison of the average response time and throughput(#requests/second)
+    
+    SETUP : 
+        The cflask executable was run on one instance of the terminal in the localhost at port (8080) with threadpools 100, 150, 200
+        On the other instance, the load test functions with the command similar to "ab -n 20000 -c 70 http://127.0.0.1:8080/arithmetic/fibonacci?num=40" were run to obtain the outputs
+        Metrics : Requests per second
+        Independent parameters: Threadpool magnitude, total requests, concurrency factor
+        Hypothesis : Throughput increases and then flattens at a certain load value.
+        Observations and Explanations : 
+            The general trend across the fibonacci, prime and pingpong functions with respect to the Threadpool size 
+                showed that the throughput increases with the threadpool size
+            The trend for each of the threadpool size was generally increasing with number of concurrent requests and then flattens eventually
+                with certain exceptions which can be attributed to the fact that the tests were done on the local machine and the combinations of 
+                threadpool sizes and number of concuurent requests

@@ -1,0 +1,2 @@
+[1674758815] [error] [client ] ssl_use_pem_file: cannot open certificate file ../../resources/cert/server.pem: error:02001002:system library:fopen:No such file or directory
+[1674758876] [error] [client ] ssl_use_pem_file: cannot open certificate file ../../resources/cert/server.pem: error:02001002:system library:fopen:No such file or directory

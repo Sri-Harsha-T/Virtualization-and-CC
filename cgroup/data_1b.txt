@@ -1,0 +1,134 @@
+In this subtask, I have created two CGroups mygrp1 and mygrp2 and run a CPU Intensive process in each of them.
+I have summarized the results from various experiments below :
+
+Test 1 :
+mygrp1 :
+Weight : 50
+
+usage_usec 61614242
+user_usec 13786933
+system_usec 47827309
+nr_periods 1664
+nr_throttled 464
+throttled_usec 12820471
+nr_bursts 0
+burst_usec 0
+
+mygrp2 :
+Weight : 100
+
+usage_usec 64406033
+user_usec 14339607
+system_usec 50066425
+nr_periods 1199
+nr_throttled 29
+throttled_usec 22299
+nr_bursts 0
+burst_usec 0
+
+---------------------
+Test 2 :
+
+mygrp1 : 
+Weight  : 50
+Quota/Period : 60000/100000
+
+usage_usec 62246342
+user_usec 14043531
+system_usec 48202811
+nr_periods 1236
+nr_throttled 12
+throttled_usec 324315
+nr_bursts 0
+burst_usec 0
+
+mygrp2 :
+Weight : 100
+Quota/Period : 30000/100000
+
+usage_usec 67577264
+user_usec 14522992
+system_usec 53054271
+nr_periods 2256
+nr_throttled 2252
+throttled_usec 127119966
+nr_bursts 0
+burst_usec 0
+
+------------------------
+
+Test 3 :
+
+mygrp1 :
+Weight : 70
+Quota/Period : 90000/100000
+
+usage_usec 58530566
+user_usec 12902723
+system_usec 45627842
+nr_periods 1483
+nr_throttled 0
+throttled_usec 0
+nr_bursts 0
+burst_usec 0
+
+mygrp2:
+Weight : 90
+Quota/Period :  70000/100000
+
+usage_usec 62215448
+user_usec 14001955
+system_usec 48213493
+nr_periods 1366
+nr_throttled 0
+throttled_usec 0
+nr_bursts 0
+burst_usec 0
+
+-------------------------
+Test 4 :
+
+mygrp1
+Weight : 50
+Quota/Period : 40000/100000
+
+usage_usec 61721986
+user_usec 14262114
+system_usec 47459872
+nr_periods 1586
+nr_throttled 930
+throttled_usec 4288430
+nr_bursts 0
+burst_usec 0
+
+mygrp2 :
+Weight : 100
+Quota/Period : 20000/100000
+usage_usec 63279037
+user_usec 13573725
+system_usec 49705311
+nr_periods 1585
+nr_throttled 1581
+throttled_usec 52990050
+nr_bursts 0
+burst_usec 0
+
+Analysis :
+In the first test, I have given weights of 50, 100 to mygrp1, mygrp2 respectively. As expected, the cgroup with higher weight finishes execution first. Once
+the process in the second cgroup finishes execution, then the weights are no longer applicable and all the resources are focused on the process in the 
+first cgroup. If we assume that the process in the second cgroup takes x periods to finish execution, the process in the first cgroup should take x + x/2 = 3x/2
+periods which is consistent with what we have observed.
+
+In the second case, the second process has twice the weight as that of the first process. But the quota of the first process is double that of the quota of the
+first process. We might expect that they would approximately take equal number of periods to finish execution, but we can see that the process with lesser quota
+almost takes twice the number of periods as that of the other process. The reason for this can be attributed to the large amount of throttling time when 
+the quota is very less compared to the period. This happens in the second process.
+
+
+In the third case, I have kept the product weight * quota same in both the processes, except that the quotas in this case are actually higher compared to the 
+ones in the last case. In this case, we can see that they almost take the same amount of time to finsih execution. The reason for this can be attributed to 
+the observation that the throttle time in both the cases is 0. It means that both the processes don't spend any idle time even because of quota issues. 
+
+
+In the last case again, I have kept the product same. But this time, the quota is low in both the cases. Hence, both the processes experience throttle time 
+and the results are expected. They run for almost the same number of periods.
